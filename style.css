@@ -1,0 +1,25 @@
+.brand-title {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.brand-white {
+    color: #FFFFFF;
+}
+
+.brand-green {
+    color: #63D471;
+}
+
+.brand-subtitle {
+    margin-top: 6px;
+    font-size: 17px;
+    color: #A9B2BF;
+    font-weight: 400;
+}
+
+.brand-container {
+    margin-bottom: 22px;
+}
+

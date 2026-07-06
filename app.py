@@ -63,9 +63,34 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("🏡 City Heatmap")
+st.set_page_config(
+    page_title="SettleSmart",
+    page_icon="assets/logo.png",
+    layout="wide",
+    )
 
+with open("style.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
+st.markdown('<div class="brand-container">', unsafe_allow_html=True)
+
+col1, col2 = st.columns([1, 8], vertical_alignment="center")
+
+with col1:
+    st.image("assets/logo.png", width=70)
+
+with col2:
+    st.markdown("""
+    <div class="brand-title">
+        <span class="brand-white">Settle</span><span class="brand-green">Smart</span>
+    </div>
+    <div class="brand-subtitle">
+        Find the best place based on what matters to you.
+    </div>
+    """, unsafe_allow_html=True)
+
+st.markdown('</div>', unsafe_allow_html=True)
+    
 with st.sidebar:
 
     st.subheader("Choisissez une ville")
